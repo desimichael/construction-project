@@ -47,7 +47,7 @@ h2 {
 	text-transform: uppercase;
 }
 
-.mainTitle {
+.main-title {
 	font-size: 5rem;
 	font-weight: 900;
 	line-height: 1.3;
@@ -111,7 +111,7 @@ p {
 	z-index: 100;
 	color: var(--primary-white-font);
 }
-.banner .titleInfo .mainTitle span {
+.banner .titleInfo .main-title span {
 	color: var(--primary-orange);
 	padding: 0 5px;
 	font-size: 6rem;
@@ -201,6 +201,11 @@ header .nav .flex a:hover {
 	font-weight: 300;
 	text-align: right;
 }
+#about .title-section h2 span {
+	font-size: 6rem;
+	color: var(--primary-orange);
+	font-weight: 700;
+}
 #about .title-section .title {
 	font-size: 3rem;
 	font-weight: 700;
@@ -264,8 +269,14 @@ header .nav .flex a:hover {
 #core-values .title-section {
 	margin-bottom: 30px;
 }
+#core-values .title-section h2 span {
+	font-size: 6rem;
+	color: var(--primary-orange);
+	font-weight: 700;
+}
+
 #core-values .title {
-	font-size: 4rem;
+	font-size: 3rem;
 }
 #core-values .value-header {
 	justify-content: flex-start;
@@ -287,8 +298,75 @@ header .nav .flex a:hover {
 #core-values .values-box .values-info {
 	margin-bottom: 15px;
 }
-
 /* CORE VALUES SECTION END */
+
+/* PORTFOLIO SECTION START */
+.portfolio {
+	padding: 150px 0;
+	background: var(--click-bg-brown);
+}
+.portfolio .title-section .main-title span {
+	color: var(--primary-orange);
+	font-size: 6rem;
+}
+.portfolio .portfolio-grid-section {
+	background: var(--grey-bg);
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	padding: 50px;
+	gap: 25px;
+	margin-top: 50px;
+}
+.portfolio .portfolio-grid-section .project-box {
+	height: 100%;
+	width: 300px;
+	border-radius: 5px;
+	position: relative;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 1);
+	border-radius: 10px;
+	padding: 15px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.portfolio .portfolio-grid-section .project-box .content {
+	position: relative;
+	opacity: 0.7;
+	transition: 0.5s;
+}
+.portfolio .portfolio-grid-section .project-box:hover .content {
+	opacity: 1;
+}
+
+.portfolio .portfolio-grid-section .project-box .project-img img {
+	object-fit: cover;
+	height: 100%;
+}
+.portfolio .portfolio-grid-section .project-box .project-info {
+	padding: 10px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.portfolio .portfolio-grid-section .project-box .project-info .project-title {
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.1rem;
+	padding: 0 15px;
+}
+.portfolio .portfolio-grid-section .project-box .project-info .project-btn {
+	background: var(--primary-orange);
+	height: 30px;
+	width: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	border: 1px solid var(--primary-white-bg);
+}
+.portfolio .portfolio-grid-section .project-box .project-info .project-btn a {
+	color: var(--primary-white-font);
+}
+
 footer {
 	background: var(--grey-bg);
 	padding: 50px 0;

@@ -195,17 +195,17 @@ header .nav li a:hover {
 
 /* ABOUT SECTION START */
 #about {
-	margin-top: 100px;
+	margin: 100px 0;
 }
 #about .container {
 	background-color: var(--primary-container-bg);
 }
-#about .flex {
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
 #about .content {
 	margin: 100px 0;
+}
+#about .content > .flex {
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 #about .content .title-group {
 	justify-self: flex-start;
@@ -258,33 +258,69 @@ header .nav li a:hover {
 /* ABOUT SECTION END */
 
 /* CORE VALUES SECTION START */
+
+#core-values {
+	margin: 100px 0;
+}
 #core-values .container {
 	background-color: var(--primary-container-bg);
 }
-#core-values .grid {
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	margin: 100px 0px;
+#core-values .content {
+	margin: 100px 0;
 }
-
-#core-values img {
-	height: 100%;
-	object-fit: cover;
-	/* background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat; */
+#core-values .content > .flex {
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
-#core-values .values-box {
-	background: var(--grey-bg);
+#core-values .content .title-group {
+	justify-self: flex-start;
+}
+#core-values .about-info {
+	max-width: 500px;
 	padding: 20px;
+	font-weight: 300;
+	border-left: 2px solid var(--icon-color);
 }
-#core-values .title-section {
-	margin-bottom: 30px;
+#core-values .line {
+	margin-top: 50px;
+	border-bottom: 5px solid var(--icon-color);
 }
-#core-values .title-section h2 span {
+#core-values .title-group h2 span {
 	font-size: 6rem;
 	color: var(--icon-color);
 	font-weight: 700;
 }
+#core-values .values-section {
+	margin-top: 100px;
+}
+#core-values .values-section > .flex {
+	display: flex;
+	justify-content: space-between;
+}
+#core-values .values-section .values-info {
+	margin: 30px 0;
+}
+#core-values .values-section .values-info .value-header {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+#core-values .values-section .values-info .value-header .icon {
+	height: 30px;
+	width: 30px;
+	background: var(--icon-color);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 15px;
+}
+#core-values .values-section .values-info p {
+	max-width: 500px;
+}
+
+/* 
+
 
 #core-values .title {
 	font-size: 3rem;
@@ -309,7 +345,7 @@ header .nav li a:hover {
 }
 #core-values .values-box .values-info {
 	margin-bottom: 15px;
-}
+} */
 /* CORE VALUES SECTION END */
 
 /* PORTFOLIO SECTION START */

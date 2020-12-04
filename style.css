@@ -195,7 +195,7 @@ header .nav li a:hover {
 
 /* ABOUT SECTION START */
 #about {
-	margin: 150px 0px;
+	margin-top: 100px;
 }
 #about .container {
 	background-color: var(--primary-container-bg);
@@ -258,15 +258,20 @@ header .nav li a:hover {
 /* ABOUT SECTION END */
 
 /* CORE VALUES SECTION START */
-#core-values {
-	padding: 150px 0;
+#core-values .container {
+	background-color: var(--primary-container-bg);
+}
+#core-values .grid {
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	margin: 100px 0px;
 }
 
 #core-values img {
 	height: 100%;
-	background-size: cover;
+	object-fit: cover;
+	/* background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 }
 #core-values .values-box {
 	background: var(--grey-bg);
@@ -291,13 +296,16 @@ header .nav li a:hover {
 	background: var(--primary-orange);
 	height: 40px;
 	width: 40px;
-	border-radius: 50px;
+	border-radius: 50%;
 	color: var(--primary-white-font);
-	margin-right: 15px;
+}
+#core-values .value-header .icon i {
+	padding: 10px;
 }
 #core-values .values-box .subtitle {
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	margin-left: 15px;
 }
 #core-values .values-box .values-info {
 	margin-bottom: 15px;
@@ -445,7 +453,11 @@ footer .flex li a:hover {
 	header .nav.active li a:hover {
 		color: var(--primary-hover);
 	}
-	.banner .titleInfo .main-title span {
+	.banner .titleInfo {
+		padding: 200px 0;
+	}
+	.banner .titleInfo .main-title span,
+	#core-values .title-section h2 span {
 		font-size: 4rem;
 	}
 	.banner .titleInfo .main-title {
@@ -453,31 +465,52 @@ footer .flex li a:hover {
 	}
 	.banner .titleInfo .subtitle,
 	#about .title-group .subtitle,
-	#about .specialties-section > .subtitle {
+	#about .specialties-section > .subtitle,
+	#about .specialties-section .grid .box .subtitle {
 		font-size: 1rem;
 	}
 	.banner .titleInfo .infoBtn {
 		padding: 10px 15px;
 		font-size: 0.8rem;
 	}
+	#about {
+		margin: 0px;
+	}
 	#about .title-group h2 {
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 	#about .title-group h2 span {
 		font-size: 4rem;
+	}
+
+	#about .specialties-section .grid .box .icon {
+		font-size: 2.3rem;
 	}
 	#about .about-info {
 		padding: 20px 0;
 		border-left: none;
 	}
-	#about .about-info p {
+	#about .specialties-section .grid .box p {
 		font-size: 0.9rem;
 	}
 	#about .line {
 		margin-top: 5px;
 	}
 	#about .specialties-section .grid .box {
-		height: 275px;
+		height: 250px;
+	}
+	#core-values .grid {
+		margin: 0px;
+	}
+	#core-values h2 {
+		font-size: 1.5rem;
+	}
+	#core-values .values-box .values-info {
+		margin: 30px 0px;
+	}
+	#core-values .value-header .icon {
+		height: 30px;
+		width: 30px;
 	}
 }
 /* Medium devices (tablets) */

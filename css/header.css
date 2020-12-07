@@ -1,0 +1,119 @@
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+	background: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 80px;
+	padding: 0 50px;
+	transition: 0.5s;
+}
+/* STICKY NAVBAR START */
+header.sticky {
+	background: var(--primary-container-bg);
+	padding: 0 50px;
+	height: 70px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+header.sticky .logo {
+	color: var(--icon-color);
+}
+header.sticky .nav .flex a {
+	color: var(--primary-white-font);
+}
+/* STICKY NAVBAR END */
+
+header .logo {
+	font-size: 4rem;
+	color: var(--icon-color);
+}
+
+header .nav {
+	position: relative;
+	display: flex;
+}
+header .nav li a {
+	color: var(--primary-white-font);
+	font-size: 1.5rem;
+	padding: 0 15px;
+	transition: 0.5s;
+}
+header .nav li a:hover {
+	color: var(--primary-hover);
+	font-size: 1.5rem;
+	padding: 0 15px;
+	cursor: pointer;
+}
+
+/* MEDIA QUERIES START */
+
+/* Small devices (portrait tablets and large phones) */
+@media (min-width: 0px) and (max-width: 767px) {
+	header,
+	header.sticky {
+		height: 80px;
+		padding: 0 15px;
+	}
+	header .nav {
+		display: none;
+	}
+	header .menuToggle {
+		position: relative;
+		width: 40px;
+		height: 40px;
+		background: url(/images/hamburger.png);
+		background-size: 50px;
+		background-repeat: no-repeat;
+		background-position: center;
+		filter: invert(100%);
+		cursor: pointer;
+	}
+	header .menuToggle.active {
+		position: realtive;
+		background: url(/images/bestx.png);
+		filter: invert(100%);
+		background-size: 25px;
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+	}
+
+	header .nav.active {
+		width: 70%;
+		height: calc(100% - 67px);
+		position: fixed;
+		top: 80px;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background: var(--primary-white-bg);
+		border-top-right-radius: 5px;
+	}
+	header .nav.active li {
+		padding: 20px 0;
+	}
+	header .nav.active li a {
+		color: var(--primary-bg);
+		font-weight: 900;
+	}
+	header .nav.active li a:hover {
+		color: var(--primary-hover);
+	}
+}
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 992px) {
+}
+/* Large devices (laptops/desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Extra large devices (large laptops and desktops) */
+@media (min-width: 1200px) {
+}
+/* MEDIA QUERIES END */

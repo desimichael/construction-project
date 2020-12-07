@@ -1,0 +1,17 @@
+footer {
+	background: var(--grey-bg);
+	padding: 50px 0;
+}
+footer .flex {
+	justify-content: space-between;
+}
+footer .flex li a {
+	color: var(--primary-black-font);
+	margin-right: 30px;
+	font-size: 1.3rem;
+}
+footer .flex li a:hover {
+	color: var(--primary-orange);
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}

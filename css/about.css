@@ -1,0 +1,109 @@
+.about {
+	margin-top: 100px;
+}
+.about .container {
+	background-color: var(--primary-container-bg);
+}
+.about .content {
+	margin: 100px 0;
+}
+.about .content > .flex {
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.about .content .title-group {
+	justify-self: flex-start;
+}
+.about .about-info {
+	max-width: 500px;
+	padding: 20px;
+	font-weight: 300;
+	border-left: 2px solid var(--icon-color);
+}
+.about .line {
+	margin-top: 50px;
+	border-bottom: 5px solid var(--icon-color);
+}
+.about .title-group h2 span {
+	font-size: 6rem;
+	color: var(--icon-color);
+	font-weight: 700;
+}
+.about .specialties-section {
+	margin-top: 100px;
+}
+.about .specialties-section > .subtitle {
+	text-transform: capitalize;
+	margin-bottom: 50px;
+}
+.about .specialties-section .grid {
+	display: grid;
+	background: var(--opacity);
+	padding: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px;
+}
+.about .specialties-section .grid .box {
+	height: 350px;
+	border: 1px solid var(--primary-white-bg);
+	transition: 0.5s;
+	padding: 15px;
+}
+
+.about .specialties-section .grid .box .icon {
+	font-size: 4rem;
+	color: var(--icon-color);
+	margin-bottom: 1rem;
+}
+.about .specialties-section .grid .box .subtitle {
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+/* MEDIA QUERIES START */
+
+/* Small devices (portrait tablets and large phones) */
+@media (min-width: 0px) and (max-width: 767px) {
+	.about {
+		margin: 0px;
+	}
+	.about .title-group .subtitle,
+	.about .specialties-section > .subtitle,
+	.about .specialties-section .grid .box .subtitle {
+		font-size: 1rem;
+	}
+	.about .title-group h2 {
+		font-size: 1.5rem;
+	}
+	.about .title-group h2 span {
+		font-size: 4rem;
+	}
+
+	.about .specialties-section .grid .box .icon {
+		font-size: 2.3rem;
+	}
+	.about .about-info {
+		padding: 20px 0;
+		border-left: none;
+	}
+	.about .specialties-section .grid .box p {
+		font-size: 0.9rem;
+	}
+	.about .line {
+		margin-top: 5px;
+	}
+	.about .specialties-section .grid .box {
+		height: 250px;
+	}
+}
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 992px) {
+}
+/* Large devices (laptops/desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Extra large devices (large laptops and desktops) */
+@media (min-width: 1200px) {
+}
+/* MEDIA QUERIES END */

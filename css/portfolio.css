@@ -1,0 +1,40 @@
+.portfolio .container {
+	background-color: var(--primary-container-bg);
+}
+.portfolio .content {
+	margin: 100px 0px;
+}
+.portfolio .title-section .main-title span {
+	color: var(--icon-color);
+	font-size: 6rem;
+}
+.portfolio .line {
+	margin-top: 50px;
+	border-bottom: 5px solid var(--icon-color);
+}
+.portfolio .portfolio-grid {
+	background: var(--grey-bg);
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	padding: 30px;
+	gap: 15px;
+	margin-top: 50px;
+	position: relative;
+}
+
+/* MEDIA QUERIES START */
+
+/* Small devices (portrait tablets and large phones) */
+@media (min-width: 0px) and (max-width: 767px) {
+}
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 992px) {
+}
+/* Large devices (laptops/desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Extra large devices (large laptops and desktops) */
+@media (min-width: 1200px) {
+}
+/* MEDIA QUERIES END */

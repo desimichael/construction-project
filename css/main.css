@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&family=Raleway:wght@300;500;600;900&display=swap");
+@import "header.css";
+@import "banner.css";
+@import "about.css";
+@import "core-values.css";
+@import "portfolio.css";
+@import "footer.css";
+
+:root {
+	--primary-white-font: #fffffe;
+	--primary-black-font: #1a1a1a;
+	--primary-container-bg: #032540;
+	--primary-white-bg: #f4f4f4;
+	--primary-bg: #031f35;
+	--icon-color: #e0a300;
+	--primary-hover: #f2b705;
+	--small-subtitle-color: #3c505e;
+	--grey-bg: rgba(206, 202, 202, 0.1);
+	--grey-title: grey;
+	--primary-orange: #ed4304;
+	--paragraph: #777e83;
+	--opacity: rgba(0, 0, 0, 0.4);
+	--shadow: 0px 14px 9px -5px rgba(0, 0, 0, 0.64);
+	--click-bg-yellow: #f2cb05;
+	--click-bg-gold: #f2b705;
+	--click-bg-brown: #73513d;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Raleway", sans-serif;
+	scroll-behavior: smooth;
+}
+body {
+	background: var(--primary-bg);
+	color: var(--primary-white-font);
+}
+/* UTILITIES START */
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0 40px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Poppins", sans-serif;
+}
+h2 {
+	font-size: 3rem;
+	font-weight: 600;
+	line-height: 1.3;
+	text-transform: uppercase;
+}
+
+.main-title {
+	font-size: 5rem;
+	font-weight: 900;
+	line-height: 1.3;
+	text-transform: uppercase;
+}
+.subtitle {
+	font-size: 1.2rem;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	height: 100%;
+	gap: 15px;
+}
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+p {
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--paragraph);
+	margin-top: 10px;
+	line-height: 1.5;
+}
+/* UTILITIES END */
+
+/* MEDIA QUERIES START */
+
+/* Small devices (portrait tablets and large phones) */
+@media (min-width: 0px) and (max-width: 767px) {
+}
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 992px) {
+}
+/* Large devices (laptops/desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Extra large devices (large laptops and desktops) */
+@media (min-width: 1200px) {
+}
+/* MEDIA QUERIES END */

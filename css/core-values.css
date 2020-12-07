@@ -1,0 +1,83 @@
+.core-values .container {
+	background-color: var(--primary-container-bg);
+}
+.core-values .content {
+	margin: 100px 0;
+}
+.core-values .content > .flex {
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.core-values .content .title-group {
+	justify-self: flex-start;
+}
+.core-values .about-info {
+	max-width: 500px;
+	padding: 20px;
+	font-weight: 300;
+	border-left: 2px solid var(--icon-color);
+}
+.core-values .line {
+	margin-top: 50px;
+	border-bottom: 5px solid var(--icon-color);
+}
+.core-values .title-group h2 span {
+	font-size: 6rem;
+	color: var(--icon-color);
+	font-weight: 700;
+}
+.core-values .values-section {
+	margin-top: 100px;
+}
+.core-values .values-section .flex {
+	gap: 20px;
+}
+.core-values .values-section .values-box {
+	margin: 20px 0;
+}
+.core-values .values-section .values-box .value-header {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.core-values .values-section .values-box .value-header .icon {
+	height: 30px;
+	width: 30px;
+	background: var(--icon-color);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+}
+
+/* MEDIA QUERIES START */
+
+/* Small devices (portrait tablets and large phones) */
+@media (min-width: 0px) and (max-width: 767px) {
+	.core-values .values-section .flex {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	.core-values h2 {
+		font-size: 1.5rem;
+	}
+	.core-values .values-box {
+		margin: 30px 0px;
+	}
+	.core-values .value-header .icon {
+		height: 30px;
+		width: 30px;
+	}
+}
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 992px) {
+}
+/* Large devices (laptops/desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Extra large devices (large laptops and desktops) */
+@media (min-width: 1200px) {
+}
+/* MEDIA QUERIES END */

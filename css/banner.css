@@ -1,0 +1,81 @@
+.banner {
+	position: relative;
+	background: url(/images/crane-scape.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	height: 100vh;
+	width: 100%;
+	z-index: 0;
+}
+.banner .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: var(--opacity);
+}
+.banner .titleInfo {
+	padding: 150px 0;
+	position: relative;
+	z-index: 100;
+	color: var(--primary-white-font);
+}
+.banner .titleInfo .main-title span {
+	color: var(--icon-color);
+	padding: 0 5px;
+	font-size: 6rem;
+}
+
+.banner .titleInfo .infoBtn {
+	background: var(--primary-container-bg);
+	color: var(--primary-white-font);
+	padding: 10px 20px;
+	border: 1px solid var(--primary-white-bg);
+	border-radius: 15px;
+	display: inline-block;
+	margin-top: 20px;
+	font-weight: 900;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+.banner .titleInfo .infoBtn:hover {
+	background: var(--primary-white-bg);
+	color: var(--primary-container-bg);
+	border: 1px solid var(--primary-container-bg);
+}
+
+/* MEDIA QUERIES START */
+
+/* Small devices (portrait tablets and large phones) */
+@media (min-width: 0px) and (max-width: 767px) {
+	.banner .titleInfo {
+		padding: 200px 0;
+	}
+	.banner .titleInfo .main-title span,
+	#core-values .title-section h2 span {
+		font-size: 4rem;
+	}
+	.banner .titleInfo .main-title {
+		font-size: 2rem;
+	}
+	.banner .titleInfo .subtitle {
+		font-size: 1rem;
+	}
+	.banner .titleInfo .infoBtn {
+		padding: 10px 15px;
+		font-size: 0.8rem;
+	}
+}
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 992px) {
+}
+/* Large devices (laptops/desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Extra large devices (large laptops and desktops) */
+@media (min-width: 1200px) {
+}
+/* MEDIA QUERIES END */

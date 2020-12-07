@@ -31,6 +31,8 @@
 	transition: opacity 0.5s ease-in-out;
 	opacity: 0.8;
 	height: 350px;
+	width: 100%;
+	object-fit: cover;
 	object-position: 50% 50%;
 }
 .portfolio .portfolio-grid .portfolio-box:hover img {
@@ -54,6 +56,8 @@
 }
 .portfolio .portfolio-grid .portfolio-box .overlay .subtitle {
 	margin-right: 10px;
+	font-weight: 900;
+	letter-spacing: 0.15rem;
 }
 .portfolio .portfolio-grid .portfolio-box .overlay .icon {
 	height: 30px;

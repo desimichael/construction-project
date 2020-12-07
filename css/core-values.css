@@ -32,8 +32,8 @@
 .core-values .values-section .flex {
 	gap: 20px;
 }
-.core-values .values-section .values-box {
-	margin: 20px 0;
+.core-values .values-section .values-box:nth-child(n + 2) {
+	margin-top: 50px;
 }
 .core-values .values-section .values-box .value-header {
 	display: flex;
